@@ -11,20 +11,24 @@ void setup()
 void loop()
 { 
   if(digitalRead(7)){
-  digitalWrite(13,1);
-     digitalWrite(12,1);
+    
+  analogWrite(13,128);
+     digitalWrite(12,1); 
+  
   } 
   else{
-     digitalWrite(13,0);
+   
+     analogWrite(13,0);
      digitalWrite(12,0);
+  
   }
    if(digitalRead(6)){
   digitalWrite(10,1);
-     digitalWrite(8,1);
+     analogWrite(8,128);
   } 
   else{
       digitalWrite(10,0);
-     digitalWrite(8,0);
+     analogWrite(8,0);
    
   }
     
